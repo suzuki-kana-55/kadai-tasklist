@@ -29,6 +29,10 @@
         </header>
 
         <div class="container">
+            {{-- エラーメッセージ --}}
+            @include('commons.error_tasks')
+            
+            @yield('status')
             @yield('content')
         </div>
 
